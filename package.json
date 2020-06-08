@@ -10,6 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.2"
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-block-scoping": "^7.10.1",
+    "@babel/plugin-transform-classes": "^7.10.1",
+    "@babel/plugin-transform-template-literals": "^7.10.1"
   }
 }
