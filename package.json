@@ -8,6 +8,11 @@
   },
   "author": "Yurii Levchenko",
   "license": "ISC",
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 1 edge version"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
