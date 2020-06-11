@@ -9,9 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": [
-    ">0.2%",
-    "not op_mini all",
-    "not dead"
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 edge version"
   ],
   "author": "Yurii Levchenko",
   "license": "ISC",
@@ -24,7 +24,10 @@
     "@babel/plugin-transform-template-literals": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
