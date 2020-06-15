@@ -38,10 +38,20 @@ module.exports = {
                 ]
             },
             {
+                //Loafing CSS
                 test: /\.(css)$/,
                 use: [
                     { loader: 'style-loader' },
                     { loader: 'css-loader' },
+                ]
+            },
+            {
+                //Loading SASS/SCSS
+                test: /\.(s[ac]ss)$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'sass-loader' },
                 ]
             },
         ]
