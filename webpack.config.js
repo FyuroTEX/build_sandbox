@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     module: {
@@ -7,8 +9,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
-            {
-                //Loading images
+            {//Loading images
                 test: /\.(png|jpg|jpeg|gif|ico)$/,
                 use: [
                     {
@@ -20,8 +21,7 @@ module.exports = {
                     }
                 ]
             },
-            {
-                //Loading fonts
+            {//Loading fonts
                 test: /\.(ttf|otf|eot|woff|woff2)$/,
                 use: [
                     {
@@ -33,18 +33,21 @@ module.exports = {
                     }
                 ]
             },
-            {
-                //Loafing CSS
+            {//Loafing CSS
                 test: /\.(css)$/,
                 use: ['style-loader', 'css-loader']
             },
-            {
-                //Loading SASS/SCSS
+            {//Loading SASS/SCSS
                 test: /\.(s[ac]ss)$/,
                 use: ['style-loader', 'css-loader',
                     { loader: 'sass-loader', options: {} },
                 ]
             },
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'public/index.html'
+        })
+    ]
 }
