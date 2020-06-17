@@ -55,5 +55,8 @@ module.exports = {
         new MiniCssExtructPlugin({
             filename: 'main-[hash:8].css'
         })
-    ]
+    ],
+    devServer: {
+        open: true
+    }
 }
